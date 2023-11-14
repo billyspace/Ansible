@@ -1,0 +1,9 @@
+---
+ - hosts: My_Ubuntu_5
+   become: yes
+   gather_facts: yes
+   tasks:
+   - name: install apache
+     apt:
+       name: apache2
+       state: present
