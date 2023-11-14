@@ -1,0 +1,27 @@
+# Ignore files with the .git extension
+*.git
+
+# Terraform
+*.tfstate
+*.tfstate.*.backup
+*.tflock
+*.tfvars
+
+# Ignore override files which may contain sensitive data
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ansible
+*.retry
+
+# Ignore sensitive variable files for Ansible
+*.vault
+*.secret
+
+# Ignore temporary files for both
+*.swp
+*~
+
+# Add additional file patterns here as needed
